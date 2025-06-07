@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First React</title>
+    <script type="module" src="./src/app3.js"></script>
+    <script src="https://unpkg.com/react@18.3.1/jsx-dev-runtime.js"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/server.browser.js"></script>
+</head>
+
+<body>
+    
+    <div id="root">
+        Hello, there how are you
+    </div>
+    
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+
+    <script type="text/babel">
+        const Chai = ({name}) => (
+            <div>
+                <h1> {name} </h1>
+            </div>
+        )
+
+        const App = () => (
+            <div>
+                <h1>hi this is chai variations</h1>
+                <Chai name="Normal tea" />
+                <Chai name="Ginger tea" />
+            </div>
+        )
+
+        const root = ReactDOM.creatRoot(document.getElementById("root"))
+        root.render(<App />)
+    </script>
+
+</body>
+
+</html>
