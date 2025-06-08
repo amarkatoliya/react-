@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-function counter() {
+export function counter() {
     const [count,setCount] = useState(0);
 
     const chaiCounter = () => {
@@ -11,6 +11,7 @@ function counter() {
         <div>
             <h1>Count of tea is: {count}</h1>
             <button onClick={chaiCounter}>counter of tea</button>
+            <chaiMenu />
         </div>
     )
 }
