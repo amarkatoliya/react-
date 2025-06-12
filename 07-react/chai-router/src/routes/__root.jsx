@@ -6,6 +6,7 @@ export const Route = createRootRoute({
 })
 
 function RootComponent() {
+  const {count} = useNotification()
   return (
     <React.Fragment>
       <div>Hello "__root"!</div>
